@@ -1378,7 +1378,7 @@ body { margin: 0; }
 
   /* دراپ‌داون موبایل - فقط با کلیک */
   .island-nav .dropdown-menu {
-    position: static !important;
+    position: https://mahdishin.github.io/kingfood_stat/static !important;
     transform: none;
     opacity: 0;
     visibility: hidden;
