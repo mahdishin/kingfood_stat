@@ -1,0 +1,567 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>About – Kingfood</title>
+  <meta name="keywords" content="Kingfood, Canada bakery, artisan bread, handmade cakes, local bakery, fresh pastries">
+  <meta name="description" content="Learn about Kingfood in Canada, our story, values, and commitment to fresh handmade bread and pastries.">
+  <meta name="author" content="Kingfood">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="None://localhost/about/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About Kingfood">
+  <meta property="og:description" content="Learn about Kingfood in Canada, our story, values, and commitment to fresh handmade bread and pastries.">
+  <meta property="og:url" content="None://localhost/about/">
+  <meta property="og:site_name" content="Kingfood">
+  <meta property="og:image" content="None://localhost/static/images/about-img2.webp">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Kingfood">
+  <meta name="twitter:description" content="Learn about Kingfood in Canada, our story, values, and commitment to fresh handmade bread and pastries.">
+  <meta name="twitter:image" content="None://localhost/static/images/about-img2.webp">
+
+  <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/static/images/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/responsive.css">
+  <link rel="stylesheet" href="/static/css/custom.css">
+  <link rel="stylesheet" href="/static/css/all.min.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Kingfood Bakery",
+    "url": "None://localhost/about/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Kingfood Bakery",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ottawa",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --accent: #e74c3c;
+      --accent-hover: #c0392b;
+      --bg: #f5f5f7;
+      --card: rgba(255, 255, 255, 0.8);
+      --ink: #1a1a1a;
+      --ink-2: #555;
+      --radius: 22px;
+      --shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    body { background: var(--bg); color: var(--ink); }
+
+    /* Page title */
+    .all-page-title {
+      background: linear-gradient(135deg, rgba(231, 76, 60, 0.92), rgba(192, 57, 43, 0.88)),
+                  url('/static/images/about-img2.webp') center/cover no-repeat;
+      padding: 130px 0 70px;
+      text-align: center;
+    }
+    .all-page-title h1 {
+      font-weight: 800;
+      font-size: 2.6rem;
+      color: #fff;
+      text-shadow: 0 4px 18px rgba(0,0,0,0.25);
+      letter-spacing: -0.5px;
+    }
+
+    /* About section */
+    .about-section-box {
+      background: var(--bg);
+      padding: 80px 0;
+    }
+
+    .about-section-box img {
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+    }
+
+    .about-section-box .inner-column {
+      background: var(--card);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2.5rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .about-section-box h1 {
+      font-weight: 800;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .about-section-box h1 span { color: var(--accent); }
+
+    .about-section-box h4 {
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 1.1rem;
+    }
+
+    .about-section-box p {
+      color: var(--ink-2);
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-section-box .btn-outline-new-white {
+      background: var(--accent) !important;
+      border: none !important;
+      color: #fff !important;
+      border-radius: 50px !important;
+      padding: 0.7rem 1.6rem !important;
+      font-weight: 600;
+      margin: 0.3rem 0.3rem 0.3rem 0;
+      transition: all 0.25s;
+      display: inline-block;
+    }
+    .about-section-box .btn-outline-new-white:hover {
+      background: var(--accent-hover) !important;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(231, 76, 60, 0.3);
+    }
+
+    /* Menu section */
+    .menu-box {
+      background: var(--bg);
+      padding: 70px 0 90px;
+    }
+
+    .heading-title h2 {
+      font-weight: 800;
+      font-size: 2.2rem;
+      letter-spacing: -0.4px;
+    }
+    .heading-title p {
+      color: var(--ink-2);
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .special-menu .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 2.25rem;
+    }
+    .special-menu .button-group button {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 50px;
+      padding: 0.55rem 1.35rem;
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--ink);
+      transition: all 0.25s;
+      cursor: pointer;
+    }
+    .special-menu .button-group button:hover,
+    .special-menu .button-group button.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(231, 76, 60, 0.25);
+    }
+
+    /* Product cards use styles from custom.css */
+
+    #back-to-top {
+      background: rgba(255, 255, 255, 0.85) !important;
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      color: var(--ink) !important;
+      font-size: 1.3rem;
+      transition: all 0.3s;
+    }
+    #back-to-top:hover {
+      background: var(--accent) !important;
+      color: #fff !important;
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 991.98px) {
+      .about-section-box img {
+        min-height: 280px;
+        margin-bottom: 1.5rem;
+      }
+      .all-page-title {
+        padding: 110px 0 55px;
+      }
+      .all-page-title h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">    
+<!-- Site CSS -->
+<link rel="stylesheet" href="/static/css/style.css">    
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="/static/css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/static/css/custom.css">
+<link rel="stylesheet" href="/static/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4/animate.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+<!-- ========== Island Glass Header ========== -->
+<header class="island-header">
+  <nav class="navbar navbar-expand-lg island-nav" id="islandNavbar">
+    <a class="navbar-brand" href="/">
+      <img src="/static/images/logo.png" alt="Kingfood Logo" class="logo-img" />
+    </a>
+
+    <button
+      class="navbar-toggler island-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbars-rs-food"
+      aria-controls="navbars-rs-food"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbars-rs-food">
+      <ul class="navbar-nav ml-auto align-items-lg-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/menu/">Menu</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown-pages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Pages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdown-pages">
+            <a class="dropdown-item" href="/stuff/">Stuff</a>
+            <a class="dropdown-item" href="/about/">About</a>
+          </div>
+        </li>
+
+
+          <div class="dropdown-menu" aria-labelledby="dropdown-blog">
+            <a class="dropdown-item" href="/blog/">Blog</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/contact/">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+
+<!-- Page Title -->
+<div class="all-page-title page-breadcrumb">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>About Kingfood</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About -->
+<div class="about-section-box">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-4 mb-md-0">
+        <img src="/static/images/about-img2.webp" alt="Kingfood team preparing Kingfood" class="img-fluid">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+        <div class="inner-column">
+          <h1>Welcome To <span>Kingfood</span></h1>
+          <h4>Little Story</h4>
+          <p>Kingfood Bakery was founded in 2020 with a passion for handmade, high-quality baked goods. What started as a personal journey in baking has grown into a community-focused local bakery in Canada, Ontario. We use fresh ingredients, traditional techniques, and creative recipes to deliver delicious bread, cakes, and pastries every day. Whether you are visiting in person or exploring our menu online, we strive to offer a warm, welcoming experience and authentic flavors that make every bite special.</p>
+          <div>
+            <a class="btn btn-lg btn-circle btn-outline-new-white" href="/cart/">Reservation</a>
+            <a class="btn btn-lg btn-circle btn-outline-new-white" href="/releases/">Release notes</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Menu -->
+<div class="menu-box">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="heading-title text-center">
+          <h2>Kingfood Menu</h2>
+          <p>At Kingfood, our menu is crafted with care and creativity. We offer freshly baked artisan bread, classic pastries, homemade cakes, and specialty items made daily with premium ingredients. Browse our menu to find your favorites or try something new from our seasonal selections.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="special-menu text-center">
+          <div class="button-group filter-button-group">
+            <button class="active" data-filter="*">All</button>
+            <button data-filter=".iranianfood">Iranian foods</button>
+            <button data-filter=".fastfood">Fast foods</button>
+            <button data-filter=".bread">Bread</button>
+            <button data-filter=".pastries">Pastries</button>
+            <button data-filter=".cake">Cakes</button>
+            <button data-filter=".appetizer">Appetizer</button>
+            <button data-filter=".dessert">Dessert</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row special-list">
+      
+        <div class="col-lg-4 col-md-6 special-grid iranianfood mb-4">
+          <div class="gallery-single fix product-card ">
+            <div class="image-wrapper position-relative">
+              <img src="/media/menu_images/Screenshot_2026-10-23_200726.png" class="img-fluid" alt="Charcoal Barbecue Chicken">
+              
+            </div>
+            <div class="why-text">
+              <h4>
+                Charcoal Barbecue Chicken
+                
+              </h4>
+              <p>.</p>
+              <h5>
+                
+                  <span class="text-success">$1.00</span>
+                
+              </h5>
+              <a href="/food_deatails/charcoal-barbecue-chicken/" class="btn btn-warning text-white mt-2">
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ========== Island Glass Contact Bar ========== -->
+<div class="island-contact-bar">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <div class="island-contact-item">
+          <div class="icon-wrap">
+            <i class="fa fa-volume-control-phone"></i>
+          </div>
+          <div class="info">
+            <h4>Phone</h4>
+            <p class="lead">
+              <a href="tel:+15149844773">+1 (514) 984 4773</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="island-contact-item">
+          <div class="icon-wrap">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <div class="info">
+            <h4>Email</h4>
+            <p class="lead">
+              <a href="mailto:support@kingfood.ca">support@kingfood.ca</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="island-contact-item">
+          <div class="icon-wrap">
+            <i class="fa fa-map-marker"></i>
+          </div>
+          <div class="info">
+            <h4>Location</h4>
+            <p class="lead">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                Coming soon!
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== Island Glass Footer ========== -->
+<footer class="island-footer">
+  <div class="container">
+    <div class="island-footer-inner">
+      <div class="row g-5">
+
+        <!-- About -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-block">
+            <h3>About Us</h3>
+            <p>
+              I started to work on 2020. I have been making a lot of cakes and foods.
+              In that time I was in University and doing some works about it and because of that
+              I didn't have a lot of time for making foods. So I could make some cake and foods for myself.
+              Because of that I learned How to cook. Then I graduated from university and I have more time
+              to Make Foods and Cakes.
+            </p>
+            <p class="mb-0">
+              Finally I'm here to make some foods and sell it to you with the Best price!
+            </p>
+          </div>
+        </div>
+
+        <!-- Opening Hours -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-block">
+            <h3>Opening hours</h3>
+            <ul class="hours-list">
+              <li><span>Monday</span> <span>8:00 AM – 8:00 PM</span></li>
+              <li><span>Tuesday</span> <span>8:00 AM – 8:00 PM</span></li>
+              <li><span>Wednesday</span> <span>8:00 AM – 8:00 PM</span></li>
+              <li><span>Thursday</span> <span>8:00 AM – 8:00 PM</span></li>
+              <li><span>Friday</span> <span class="closed">Closed</span></li>
+              <li><span>Saturday</span> <span class="closed">Closed</span></li>
+              <li><span>Sunday</span> <span>8:00 AM – 5:00 PM</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-block">
+            <h3>Contact information</h3>
+            <ul class="contact-list">
+              <li>
+                <i class="fa fa-map-marker-alt"></i>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  Coming soon!
+                </a>
+              </li>
+              <li>
+                <i class="fa fa-phone"></i>
+                <a href="tel:+15149844773">+1 (514) 984 4773</a>
+              </li>
+              <li>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:support@kingfood.ca">support@kingfood.ca</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Social + Links -->
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-block">
+            <h3>Social media</h3>
+            <ul class="list-inline f-social">
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/kingfood.ca/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+
+            <h3 class="mt-4">Links</h3>
+            <p class="footer-links">
+              <a href="/privacy_policy">Privacy policy</a>
+              <span class="sep">·</span>
+              <a href="/terms_of_use">Terms of use</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright bar -->
+  <div class="island-copyright">
+    <div class="container">
+      <p class="company-name mb-0">
+        All Rights Reserved. &copy; 2026
+        <a href="#">Kingfood</a>
+        | v 1.6.3 (Not available now)
+        | Designed with ❤️
+      </p>
+    </div>
+  </div>
+</footer>
+<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+<script src="/static/js/jquery-3.2.1.min.js"></script>
+<script src="/static/js/popper.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/jquery.superslides.min.js"></script>
+<script src="/static/js/images-loded.min.js"></script>
+<script src="/static/js/isotope.min.js"></script>
+<script src="/static/js/baguetteBox.min.js"></script>
+<script src="/static/js/form-validator.min.js"></script>
+<script src="/static/js/contact-form-script.js"></script>
+<script src="/static/js/custom.js"></script>
+</body>
+</html>
