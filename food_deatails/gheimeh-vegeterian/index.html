@@ -105,24 +105,50 @@
 <!-- ========== Header (بدون Cart / Login / Admin) ========== -->
 <header class="island-header">
   <nav class="navbar navbar-expand-lg island-nav" id="islandNavbar">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="https://mahdishin.github.io/kingfood_stat/">
       <img src="https://mahdishin.github.io/kingfood_stat/static/images/logo.png" alt="Kingfood Logo" class="logo-img" />
     </a>
-    <button class="navbar-toggler island-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food">
+
+    <button
+      class="navbar-toggler island-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbars-rs-food"
+      aria-controls="navbars-rs-food"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbars-rs-food">
       <ul class="navbar-nav ml-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="/menu/">Menu</a></li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://mahdishin.github.io/kingfood_stat/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://mahdishin.github.io/kingfood_stat/menu/">Menu</a>
+        </li>
+
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Pages</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="/stuff/">Stuff</a>
-            <a class="dropdown-item" href="/about/">About</a>
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown-pages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Pages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdown-pages">
+            <a class="dropdown-item" href="https://mahdishin.github.io/kingfood_stat/stuff/">Stuff</a>
+            <a class="dropdown-item" href="https://mahdishin.github.io/kingfood_stat/about/">About</a>
           </div>
         </li>
-        <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+
+
+          <div class="dropdown-menu" aria-labelledby="dropdown-blog">
+            <a class="dropdown-item" href="https://mahdishin.github.io/kingfood_stat/blog/">Blog</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://mahdishin.github.io/kingfood_stat/contact/">Contact</a>
+        </li>
       </ul>
     </div>
   </nav>
